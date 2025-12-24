@@ -19,7 +19,7 @@ Command Breakdown
 
 -A →  Aggressive scanning, enables OS detection, script scanning, and traceroute
 
--T24 → Adjusts scan timing for faster execution
+-T4 → Adjusts scan timing for faster execution
 
 10.6.6.23 → Target IP address
 
