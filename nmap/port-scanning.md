@@ -31,3 +31,35 @@ Result Explanation
 
 Service and version detection helps identify outdated or vulnerable services.
 The additional data gathered supports deeper security analysis and risk assessment.
+
+2. Service Enumeration on SMB Ports
+
+  Service Enumeration on SMB (Server Message Block) ports, primarily TCP 139 and TCP 445, is the process of gathering information 
+  about shared resources, users, and potential vulnerabilities on a target system.
+
+  **command**
+
+  nmap -A -p139,445 10.6.6.23
+
+  Explanation
+
+  This command performs an advanced scan on SMB-related ports.
+  It detects running services, attempts OS identification, and runs default Nmap scripts to gather additional information from the 
+  target.
+
+  Command Breakdown
+
+  -A → [Aggressive scanning] Enables OS detection, script scanning, and traceroute
+
+  -p 139,445 → Targets SMB ports (NetBIOS and SMB)
+
+  10.6.6.23 → Target IP address
+
+  Result
+
+ The scan returned information about the services running on ports 139 and 445.
+
+ Result Explanation
+
+SMB services can reveal valuable system and network information.
+Enumerating these ports helps identify potential misconfigurations or security weaknesses.
