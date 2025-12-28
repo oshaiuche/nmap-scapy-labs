@@ -55,11 +55,38 @@ The additional data gathered supports deeper security analysis and risk assessme
 
   10.6.6.23 → Target IP address
 
-  Result
+Result
 
- The scan returned information about the services running on ports 139 and 445.
+The scan returned information about the services running on ports 139 and 445.
 
- Result Explanation
+Result Explanation
 
 SMB services can reveal valuable system and network information.
 Enumerating these ports helps identify potential misconfigurations or security weaknesses.
+
+3. SMB Share Enumeration
+
+**command**
+nmap --script smb-enum-shares.nse -p 445 10.6.6.23
+
+Explanation
+
+This command uses an Nmap NSE script to enumerate shared resources on the target system.
+It queries the SMB service to identify available network shares and their access permissions.
+
+Command Breakdown
+
+--script smb-enum-shares.nse → Runs the SMB share enumeration script
+
+-p 445 → Targets the SMB service port
+
+10.6.6.23 → Target IP address
+
+Result
+
+The scan returned a list of SMB shares available on the target system.
+
+Result Explanation
+
+Enumerated shares may expose sensitive files or allow unauthorized access.
+This information is useful for assessing potential lateral movement or data exposure.
