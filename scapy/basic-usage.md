@@ -57,20 +57,57 @@ Result Explanation
 
 Packet sniffing allows observation of network communication and helps understand how data flows across the network.
 
-4. Testing Packet Capture with Ping
+4. Generating Traffic with Ping
 
 **command**
-ping google.com
+ping www.google.com
 
 Explanation
 
-This command was used to generate network traffic that could be observed using Scapy packet sniffing.
+This command was used to generate network traffic that could be captured and analyzed using Scapy packet sniffing.
 
 Result
 
-The command returned a DNS resolution error indicating that the domain name could not be resolved.
+The ping command successfully sent and received ICMP packets from www.google.com.
 
 Result Explanation
 
-The error occurred because DNS resolution was unavailable in the lab environment.
-Despite this, the step demonstrates how external traffic can be generated for packet capture during analysis.
+The successful ping confirms network connectivity and DNS resolution.
+The generated ICMP traffic could be observed and analyzed using Scapy during packet capture.
+
+5. Storing Captured Packets
+
+**command**
+Paro = _
+
+Explanation
+
+This command captures network packets and stores them in the variable paro.
+Instead of only displaying packets, Scapy saves them so they can be analyzed later.
+
+Result
+
+Network packets were successfully captured and stored in the paro variable.
+
+Result Explanation
+
+Storing packets in a variable allows further inspection, filtering, or analysis of the captured traffic within Scapy.
+
+6. Sniffing on a Specific Interface
+
+**command**
+sniff(iface="br-internal")
+
+Explanation
+
+This command captures network packets from a specific network interface.
+The iface parameter tells Scapy which interface to listen on.
+
+Result
+
+Scapy captured packets from the br-internal interface.
+
+Result Explanation
+
+Selecting a specific interface ensures that only traffic from the intended network segment is captured for analysis.
+
