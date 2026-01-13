@@ -6,6 +6,16 @@ OS-fingerprinting is to know the particular Operating System / service running o
 
 sudo nmap -O 10.6.6.23
 
+Command breakdown:
+
+sudo: Runs the command with root privileges (needed for OS detection because it sends low-level packets).
+
+nmap: Network mapper tool for network discovery/security scanning.
+
+-O: Enables OS fingerprinting - attempts to guess the target's operating system.
+
+10.6.6.23: Target IP address ( device on the local network).
+
 Explanation
 
 This command enables operating system detection on the target host.
