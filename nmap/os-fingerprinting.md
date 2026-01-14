@@ -30,3 +30,5 @@ Result Explanation
 
 Identifying the operating system helps narrow down possible vulnerabilities and guides further enumeration and exploitation techniques.
 
+![OS Fingerprinting](/screenshots/os-fingerprinting.png)
+
