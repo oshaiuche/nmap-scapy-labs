@@ -30,7 +30,7 @@ Result
 
 The system IP address and active network interface were identified.
 
-![Network Interface](main/screenshots/network-interface-check.png)
+![Network Interface](nmap-scapy-labs/screenshots/network-interface-check.png)
 
 
 3. Host Discovery
