@@ -119,5 +119,5 @@ Result Explanation
 
 Selecting a specific interface ensures that only traffic from the intended network segment is captured for analysis.
 
-![br-internal](/screnshots/br-internal-sniff.png)
+![br-internal](/screenshots/br-internal-sniff.png)
 
