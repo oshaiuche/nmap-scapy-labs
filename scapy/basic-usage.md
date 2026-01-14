@@ -21,6 +21,8 @@ Result Explanation
 
 A successful launch confirms that Scapy is installed and ready for packet crafting and analysis.
 
+![Scapy Launch](/screenshots/scapy-launch.png)
+
 2. Inspecting the IP Layer in Scapy
 
 **command**
@@ -39,6 +41,8 @@ Result Explanation
 
 Viewing the IP fields allows precise packet crafting by knowing which parameters can be set or modified.
 
+![Fields of IP](/screenshots/ls-ip.png)
+
 3. Packet Sniffing with Scapy
 
 **command**
@@ -56,6 +60,8 @@ Live network packets were captured and displayed by Scapy.
 Result Explanation
 
 Packet sniffing allows observation of network communication and helps understand how data flows across the network.
+
+![Packet Sniff](/screenshots/sniff-ping.png)
 
 4. Generating Traffic with Ping
 
