@@ -4,7 +4,7 @@ Port scanning in Nmap is the process of using the Nmap tool to send specially cr
 
 **command**
 
-nmap -p 21 -sV -A -T24 10.6.6.23
+nmap -p 21 -sV -A -T4 10.6.6.23
 
 Explanation
 
@@ -31,6 +31,8 @@ Result Explanation
 
 Service and version detection helps identify outdated or vulnerable services.
 The additional data gathered supports deeper security analysis and risk assessment.
+
+![Port Scanning](/screenshots/port-scan.png)
 
 2. Service Enumeration on SMB Ports
 
@@ -64,6 +66,8 @@ Result Explanation
 SMB services can reveal valuable system and network information.
 Enumerating these ports helps identify potential misconfigurations or security weaknesses.
 
+![Host Discovery](/screenshots/smb-port.png)
+
 3. SMB Share Enumeration
 
 **command**
@@ -90,3 +94,5 @@ Result Explanation
 
 Enumerated shares may expose sensitive files or allow unauthorized access.
 This information is useful for assessing potential lateral movement or data exposure.
+
+![Host Discovery](/screenshots/script-smb-enum.png)
