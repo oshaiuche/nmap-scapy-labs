@@ -99,6 +99,8 @@ Result Explanation
 
 Storing packets in a variable allows further inspection, filtering, or analysis of the captured traffic within Scapy.
 
+![saved sniffed packet into paro](/screenshots/paro.png)
+
 6. Sniffing on a Specific Interface
 
 **command**
@@ -116,4 +118,6 @@ Scapy captured packets from the br-internal interface.
 Result Explanation
 
 Selecting a specific interface ensures that only traffic from the intended network segment is captured for analysis.
+
+![br-internal](/screnshots/br-internal-sniff.png)
 
