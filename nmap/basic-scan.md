@@ -30,6 +30,9 @@ Result
 
 The system IP address and active network interface were identified.
 
+![Network Interface](screenshots/network-interface-check.png)
+
+
 3. Host Discovery
    
    **command**
@@ -50,4 +53,6 @@ Result Explanation
 
 A successful response means the host is active and can be scanned further.
 If no response was received, the host could be offline or blocking probe packets.
+
+![Host Discovery](screenshots/host-discovery.png)
 
