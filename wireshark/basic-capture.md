@@ -20,6 +20,8 @@ Result Explanation
 
 Identifying the correct network interface ensures that Wireshark captures traffic from the intended network segment.
 
+![ifconfig](/screenshots/ifconfig.png)
+
 2. Default Gateway Identification
 
 **command**
@@ -37,6 +39,8 @@ The routing table showed the default route and indicated that traffic is routed 
 Result Explanation
 
 The default route confirms that eth0 is the primary interface for network communication, making it the correct interface to use for packet capture in Wireshark.
+
+![ip route](/screenshots/wireshark-iproute.png)
 
 3. Packet Capture Using Tcpdump
 
@@ -65,3 +69,5 @@ Network packets were successfully captured and saved to the dre.pcap file.
 Result Explanation
 
 Saving traffic to a capture file allows offline analysis in Wireshark without needing to capture live traffic again.
+
+![Captured Network Traffic](/screenshots/capture.png)
